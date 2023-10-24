@@ -66,11 +66,12 @@ h1, h2 {
 
 h1 {
 border-bottom: 1px solid #ccc;
+text-align: center;
 }
 
 h2 {
     font-size: 1.2rem;
-    color: navy;
+    color:black;
     text-align: center;
     margin-top: 30px;
 }
@@ -136,14 +137,17 @@ footer {
 @media only screen and (min-width: 32.5em) {
     nav ul {
         flex-direction: row;
+        
     }
 
     nav ul li:first-child {
         display: none;
+        
     }
 
     nav ul li {
         display: block;
+        
     }
 
     main {
