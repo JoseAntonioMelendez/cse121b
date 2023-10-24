@@ -16,7 +16,7 @@ function starWars() {
 }
 
 async function people(randomNum){
-    let response = await fetch('http://swapi.dev/api/people');
+    let response = await fetch('https://swapi.dev/api/people');
     let peopleData = await response.json()
 
     let response2 = await fetch(peopleData.next)
@@ -81,32 +81,32 @@ async function people(randomNum){
 }
 
 async function planets(randomNum){
-    let response = await fetch('http://swapi.dev/api/planets');
+    let response = await fetch('https://swapi.dev/api/planets');
     let planetData = await response.json()
     document.querySelector('#planet').textContent = planetData.results[randomNum].name
 }
 
 async function starships(randomNum){
-    let response = await fetch('http://swapi.dev/api/starships');
+    let response = await fetch('https://swapi.dev/api/starships');
     let starshipData = await response.json()
     document.querySelector('#starship').textContent = starshipData.results[randomNum].name
 }
 
 async function species(randomNum){
-    let response = await fetch('http://swapi.dev/api/species');
+    let response = await fetch('https://swapi.dev/api/species');
     let speciesData = await response.json()
     document.querySelector('#species').textContent = speciesData.results[randomNum].name
 }
 
 async function vehicles(randomNum){
-    let response = await fetch('http://swapi.dev/api/vehicles');
+    let response = await fetch('https://swapi.dev/api/vehicles');
     let vehiclesData = await response.json()
     document.querySelector('#vehicles').textContent = vehiclesData.results[randomNum].name
 }
 
 async function movies(){
     const randomInt = Math.floor(Math.random() * 6)
-    let response = await fetch('http://swapi.dev/api/films');
+    let response = await fetch('https://swapi.dev/api/films');
     let moviesData = await response.json()
     document.querySelector('#movies').textContent = moviesData.results[randomInt].title
 }
